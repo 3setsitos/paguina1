@@ -3,52 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Página Web</title>
+  <title>Mi Página con WhatsApp</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f0f0;
     }
+
     header {
       background-color: #333;
-      color: #fff;
-      padding: 1em 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      text-align: center;
-    }
-    nav a {
       color: white;
-      padding: 14px 20px;
-      display: inline-block;
-      text-decoration: none;
+      padding: 20px 0;
+      text-align: center;
     }
-    nav a:hover {
-      background-color: #555;
-    }
+
     main {
       padding: 20px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
       text-align: center;
-      padding: 10px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
       position: fixed;
-      bottom: 0;
-      width: 100%;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20ba5a;
+    }
+
+    .whatsapp-float i {
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bienvenido a Mi Página Web</h1>
+    <h1>Bienvenido a Mi Página</h1>
   </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#"
+  <main>
+    <h2>Hola 👋</h2>
+    <p>Esta es una página de ejemplo con una imagen y acceso directo a WhatsApp.</p>
+
+    <!-- Imagen principal -->
+    <img src="mi-imagen.jpg" alt="Imagen principal de bienvenida" />
+
+    <p>¡Contáctame por WhatsApp si tienes alguna pregunta!</p>
+  </main>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20más%20información" 
+     class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
+    <i>📱</i>
+  </a>
+
+</body>
+</html>
