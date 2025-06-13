@@ -1,156 +1,41 @@
+indesx.html
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre mí</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-
-    header {
-      background-color: #1e3a8a;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #374151;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    img {
-      display: block;
-      max-width: 200px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
-    }
-
-    h1, h2 {
-      color: #1e3a8a;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 1.1em;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    footer {
-      background-color: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 30px;
-      line-height: 60px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-      z-index: 100;
-      text-decoration: none;
-    }
-
-    .whatsapp-float:hover {
-      background-color: #1ebe5d;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>TravelX - Viajes al Mejor Precio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Sobre mí</h1>
-    <p>Bienvenido a mi página personal</p>
+    <h1>🌍 TravelX</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Paquetes</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Vender</a>
+    </nav>
   </header>
 
-  <!-- Barra de navegación -->
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#quienes-somos">¿Quiénes somos?</a>
-  </nav>
-
   <main>
-    <!-- Sección de inicio -->
-    <section id="inicio">
-      <img src="foto-perfil.jpg" alt="Mi foto de perfil" />
-      <h2>Hola, soy una persona apasionada</h2>
-      <p>
-        Me considero alguien curioso, comprometido y creativo. Me interesa aprender cosas nuevas, especialmente en el área de la tecnología y el desarrollo digital.
-      </p>
-      <p>
-        Esta página es parte de mi aprendizaje y una forma de mostrar quién soy en internet.
-      </p>
-    </section>
+    <section class="product-card">
+      <img src="https://cdn.pixabay.com/photo/2016/11/18/14/36/airplane-1838701_1280.jpg" alt="Viaje a Europa">
+      <div class="info">
+        <h2>Paquete: Europa Escape (2025)</h2>
+        <p>Incluye vuelos, alojamiento y actividades en 5 países de Europa.</p>
+        <p class="price">Desde $799</p>
 
-    <!-- Sección de contacto -->
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme directamente a través de WhatsApp haciendo clic en el botón verde o contactarme por correo electrónico.</p>
-      <ul>
-        <li><strong>Email:</strong> tu.email@ejemplo.com</li>
-        <li><strong>WhatsApp:</strong> +57 300 123 4567</li>
-      </ul>
-    </section>
+        <div class="actions">
+          <button onclick="placeBid()">📩 Hacer Oferta</button>
+          <button onclick="buyNow()">🛒 Comprar Ahora</button>
+          <button onclick="sellPackage()">📤 Vender Paquete</button>
+        </div>
 
-    <!-- Sección de quiénes somos -->
-    <section id="quienes-somos">
-      <h2>¿Quiénes somos?</h2>
-      <p>
-        Actualmente soy un emprendedor digital en proceso de formación. Trabajo de manera independiente y colaboro con personas que comparten mi visión de crecimiento, tecnología y desarrollo personal.
-      </p>
-      <p>
-        En el futuro, planeo formar un equipo comprometido con la creación de soluciones tecnológicas útiles, accesibles y responsables.
-      </p>
+        <p id="output"></p>
+      </div>
     </section>
   </main>
 
-  <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/573001234567?text=Hola%2C%20me%20gustaría%20contactarte" 
-     class="whatsapp-float" target="_blank" title="Chatea conmigo en WhatsApp">📱</a>
-
-  <footer>
-    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
-  </footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
-
